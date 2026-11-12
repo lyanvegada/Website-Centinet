@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080910">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Aprende a utilizar Centinet con retos prácticos de ciberseguridad en un laboratorio controlado de Red Team.">
+  <title>Centinet CTF — Aprende haciendo</title>
+  <link rel="icon" type="image/png" href="assets/centinet-mark.png">
+  <link rel="preload" as="image" href="assets/centinet-mark.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ctf.css">
+  <script src="theme.js"></script>
+</head>
+<body class="ctf-page">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Centinet, inicio">
+        <img src="assets/centinet-mark.png" alt="" width="48" height="48">
+        <span class="brand-word">CENTINET</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="index.html#plataforma">Plataforma</a>
+        <a href="index.html#como-funciona">Cómo funciona</a>
+        <a href="index.html#seguridad">Seguridad</a>
+        <a href="index.html#planes">Planes</a>
+        <a class="nav-ctf-link active" href="ctf.html" aria-current="page">CTF</a>
+        <a class="nav-mobile-cta" href="index.html#contacto">Solicitar propuesta <span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Activar modo claro" aria-pressed="false" title="Cambiar tema">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.6 8.6 0 1 0 20.2 15.4Z"></path></svg>
+          <span class="theme-label">Tema</span>
+        </button>
+        <a class="button button-small button-primary nav-cta" href="index.html#contacto">Solicitar propuesta <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="ctf-hero" id="inicio">
+      <div class="ctf-hero-grid" aria-hidden="true"></div>
+      <div class="ctf-glow ctf-glow-a" aria-hidden="true"></div>
+      <div class="ctf-glow ctf-glow-b" aria-hidden="true"></div>
+      <div class="container ctf-hero-layout">
+        <div class="ctf-hero-copy reveal">
+          <div class="ctf-breadcrumb"><a href="index.html">Centinet</a><span>/</span><span>CTF</span></div>
+          <div class="eyebrow"></span> APRENDE HACIENDO · LABORATORIO PRÁCTICO</div>
+          <h1>Aprende Centinet.<br><span class="gradient-text">Reto a reto.</span></h1>
+          <p class="ctf-hero-lead">Descubre cómo funciona la ciberseguridad desde dentro con nuestros CTFs. Explora, investiga y resuelve escenarios diseñados para aprender de una manera práctica, amigable y guiada.</p>
+          <div class="ctf-hero-points">
+            <span><i aria-hidden="true">✓</i> 4 retos prácticos</span>
+            <span><i aria-hidden="true">✓</i> Laboratorio con Kali Linux</span>
+            <span><i aria-hidden="true">✓</i> Detección y aprendizaje</span>
+          </div>
+          <div class="ctf-hero-actions">
+            <a class="button button-primary button-large" href="#retos">Explorar los retos <span aria-hidden="true">↓</span></a>
+            <a class="ctf-text-link" href="#laboratorio">Conocer el laboratorio <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="ctf-hero-visual reveal reveal-delay-2" aria-label="Vista ilustrativa del entorno de práctica Centinet CTF">
+          <div class="ctf-console-card">
+            <div class="ctf-console-top">
+              <div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>CTF / TERMINAL DE PRÁCTICA</span>
+              <span class="ctf-console-status"><i></i> VISTA PREVIA</span>
+            </div>
+            <div class="ctf-console-body">
+              <div class="ctf-console-caption"><span class="ctf-kali-mark">K</span><span><b>Kali Linux</b><small>Entorno de simulación</small></span></div>
+              <div class="terminal-line"><span class="terminal-prompt">kali@centinet:~$</span> ping -c 4 centinet-ctf-target</div>
+              <div class="terminal-output">PING centinet-ctf-target<br>64 bytes from centinet-ctf-target: icmp_seq=1<br>64 bytes from centinet-ctf-target: icmp_seq=2<br><span class="terminal-muted">···</span></div>
+              <div class="terminal-line terminal-line-ready"><span class="terminal-prompt">kali@centinet:~$</span> <span class="terminal-cursor"></span></div>
+              <div class="ctf-console-footer"><span><i></i> RED DE SIMULACIÓN</span><span>EJEMPLO DE COMANDO</span></div>
+            </div>
+          </div>
+          <div class="ctf-float-tag"><span class="ctf-float-icon">⌘</span><span><b>Aprendizaje práctico</b><small>Explora a tu ritmo</small></span></div>
+        </div>
+      </div>
+      <a class="ctf-scroll" href="#mision"><span></span> Conoce tu misión</a>
+    </section>
+
+    <section class="ctf-intro-band" id="mision">
+      <div class="container ctf-mission-card reveal">
+        <div class="ctf-mission-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 5 40 12v11c0 10-7.5 17-16 21C15.5 40 8 33 8 23V12l16-7Z"></path><path d="m17 24 5 5 10-11"></path></svg>
+        </div>
+        <div class="ctf-mission-copy">
+          <span class="ctf-kicker">TU MISIÓN</span>
+          <h2>Piensa como atacante. Aprende a detectar como defensor.</h2>
+          <p>Has sido desplegado en una instancia de Kali Linux desde tu navegador y dentro de nuestra red de simulación. Se ha detectado un servidor corporativo comprometido por actores maliciosos, que dejaron múltiples puertas traseras.</p>
+          <p>Tu objetivo es infiltrarte en el servidor, identificar las vulnerabilidades y recuperar las cuatro banderas de información clasificada. Mientras avanzas, Centinet evaluará si sus defensas son capaces de detectar tus movimientos.</p>
+        </div>
+        <div class="ctf-mission-stats" aria-label="Resumen del desafío">
+          <div><strong>04</strong><span>Flags por encontrar</span></div>
+          <div><strong>01</strong><span>Servidor objetivo</span></div>
+          <div><strong>RED</strong><span>Entorno aislado</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ctf-section" id="laboratorio">
+      <div class="container">
+        <div class="ctf-section-heading reveal">
+          <div>
+            <div class="eyebrow"></span> ANTES DE COMENZAR</div>
+            <h2>Conoce tu <span class="gradient-text">entorno de práctica.</span></h2>
+            <p>Familiarízate con el objetivo y comprueba la conectividad antes de iniciar los retos.</p>
+          </div>
+          <div class="ctf-lab-chip"><span></span> ENTORNO DE SIMULACIÓN</div>
+        </div>
+
+        <div class="ctf-target-panel reveal">
+          <div class="ctf-target-main">
+            <div class="ctf-target-heading"><span class="ctf-target-symbol" aria-hidden="true">⌁</span><div><span class="ctf-kicker">DATOS DEL OBJETIVO</span><h3>Servidor corporativo comprometido</h3></div></div>
+            <div class="ctf-target-grid">
+              <div class="ctf-target-item"><span>HOSTNAME OBJETIVO</span><strong>centinet-ctf-target</strong></div>
+              <div class="ctf-target-item"><span>ENTORNO DE ATAQUE</span><strong>Kali Linux · Terminal</strong></div>
+              <div class="ctf-target-item"><span>RED</span><strong>Red interna de simulación</strong></div>
+            </div>
+            <div class="ctf-connect-check"><div><span class="ctf-kicker">PRUEBA DE CONEXIÓN</span><p>Desde la terminal de Kali, comprueba que tienes visibilidad del servidor objetivo:</p></div><code>ping -c 4 centinet-ctf-target</code></div>
+          </div>
+          <aside class="ctf-deploy-card">
+            <span class="ctf-deploy-overline">¿TODO LISTO?</span>
+            <div class="ctf-deploy-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Entra al laboratorio</h3>
+            <p>Abre tu entorno de práctica en una pestaña nueva y comienza a explorar.</p>
+            <a class="button button-primary button-full" href="http://ctf.centinet.ctf" target="_blank" rel="noopener noreferrer">Desplegar entorno <span aria-hidden="true">↗</span></a>
+            <small>El laboratorio se abrirá en otra pestaña.</small>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="ctf-section ctf-challenges-section" id="retos">
+      <div class="container">
+        <div class="ctf-section-heading ctf-section-heading-centered reveal">
+          <div class="eyebrow"></span> TU RECORRIDO</div>
+          <h2>Cuatro retos. <span class="gradient-text">Una misión.</span></h2>
+          <p>Avanza paso a paso, utiliza las pistas cuando las necesites y encuentra las flags que dejó el rastro de los atacantes.</p>
+        </div>
+
+        <div class="ctf-challenge-grid">
+          <article class="ctf-challenge-card reveal">
+            <div class="ctf-challenge-top"><span class="ctf-challenge-number">01</span><span class="ctf-difficulty difficulty-easy"><span aria-label="Una estrella de cinco">★</span><span>Fácil</span></span></div>
+            <div class="ctf-challenge-category">RECONOCIMIENTO · FUGA DE INFORMACIÓN</div>
+            <h3>Mirando bajo la alfombra</h3>
+            <p class="ctf-challenge-context">Los atacantes modificaron la página principal del panel web corporativo, pero olvidaron borrar un directorio oculto que contiene información sensible en texto plano.</p>
+            <details class="ctf-hints">
+              <summary><span>Ver pista técnica</span><span class="ctf-details-plus" aria-hidden="true">+</span></summary>
+              <div class="ctf-hint-content"><p>Abre Firefox dentro de Kali y visita el servidor objetivo:</p><code>http://centinet-ctf-target</code><p>Revisa la estructura de carpetas. Piensa qué nombre suelen tener los directorios ocultos o secretos en servidores web.</p></div>
+            </details>
+            <div class="ctf-flag-format"><span>FORMATO DE RESPUESTA</span><code>CTF{...}</code></div>
+            <form class="ctf-flag-form" data-flag-check="1" novalidate>
+              <label for="flag-entry-1">Introduce la flag que encontraste</label>
+              <div class="ctf-flag-entry">
+                <input id="flag-entry-1" name="flag" type="text" inputmode="text" maxlength="100" placeholder="CTF{...}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="flag-feedback-1" required>
+                <button class="button button-primary" type="submit">Comprobar <span aria-hidden="true">→</span></button>
+              </div>
+              <p class="ctf-flag-feedback" id="flag-feedback-1" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="ctf-challenge-card reveal reveal-delay-1">
+            <div class="ctf-challenge-top"><span class="ctf-challenge-number">02</span><span class="ctf-difficulty difficulty-medium"><span aria-label="Tres estrellas de cinco">★★★</span><span>Intermedio</span></span></div>
+            <div class="ctf-challenge-category">EJECUCIÓN DE CÓDIGO REMOTO</div>
+            <h3>Entradas no sanitizadas</h3>
+            <p class="ctf-challenge-context">El equipo de desarrollo dejó un script llamado <code>ping.php</code> en la raíz del servidor web para hacer pruebas de red, pero no sanitizó las variables.</p>
+            <details class="ctf-hints">
+              <summary><span>Ver pista técnica</span><span class="ctf-details-plus" aria-hidden="true">+</span></summary>
+              <div class="ctf-hint-content"><p>Visita el script y observa el parámetro <code>cmd</code>:</p><code>http://centinet-ctf-target/ping.php</code><p>Prueba a pasar un comando del sistema operativo por la URL:</p><code>http://centinet-ctf-target/ping.php?cmd=ls</code><p>Encuentra el archivo de texto sospechoso y lee su contenido.</p></div>
+            </details>
+            <div class="ctf-flag-format"><span>FORMATO DE RESPUESTA</span><code>CTF{...}</code></div>
+            <form class="ctf-flag-form" data-flag-check="2" novalidate>
+              <label for="flag-entry-2">Introduce la flag que encontraste</label>
+              <div class="ctf-flag-entry">
+                <input id="flag-entry-2" name="flag" type="text" inputmode="text" maxlength="100" placeholder="CTF{...}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="flag-feedback-2" required>
+                <button class="button button-primary" type="submit">Comprobar <span aria-hidden="true">→</span></button>
+              </div>
+              <p class="ctf-flag-feedback" id="flag-feedback-2" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="ctf-challenge-card reveal">
+            <div class="ctf-challenge-top"><span class="ctf-challenge-number">03</span><span class="ctf-challenge-type">INTERCEPCIÓN · FUERZA BRUTA</span></div>
+            <div class="ctf-challenge-category">SERVICIOS EXPUESTOS · EXFILTRACIÓN</div>
+            <h3>Secretos en el aire</h3>
+            <p class="ctf-challenge-context">Creemos que los atacantes abrieron un servicio antiguo para exfiltrar archivos de forma remota.</p>
+            <details class="ctf-hints">
+              <summary><span>Ver pistas técnicas</span><span class="ctf-details-plus" aria-hidden="true">+</span></summary>
+              <div class="ctf-hint-content">
+                <p><b>Pista 1.</b> Escanea los puertos y servicios abiertos:</p><code>nmap -sV centinet-ctf-target</code>
+                <p><b>Pista 2.</b> Si encuentras FTP en el puerto 21, prueba las credenciales filtradas:</p>
+                <div class="ctf-credentials"><span>Usuario <b>ftpuser</b></span><span>Contraseña <b>ftp123</b></span></div>
+                <p><b>Pista 3.</b> Utiliza <code>wget</code> para extraer el archivo desde el entorno restringido. La sintaxis general es:</p>
+                <code>wget ftp://usuario:contraseña@objetivo/archivo.txt</code>
+              </div>
+            </details>
+            <div class="ctf-flag-format"><span>FORMATO DE RESPUESTA</span><code>CTF{...}</code></div>
+            <form class="ctf-flag-form" data-flag-check="3" novalidate>
+              <label for="flag-entry-3">Introduce la flag que encontraste</label>
+              <div class="ctf-flag-entry">
+                <input id="flag-entry-3" name="flag" type="text" inputmode="text" maxlength="100" placeholder="CTF{...}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="flag-feedback-3" required>
+                <button class="button button-primary" type="submit">Comprobar <span aria-hidden="true">→</span></button>
+              </div>
+              <p class="ctf-flag-feedback" id="flag-feedback-3" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="ctf-challenge-card reveal reveal-delay-1">
+            <div class="ctf-challenge-top"><span class="ctf-challenge-number">04</span><span class="ctf-difficulty difficulty-hard"><span aria-label="Cinco estrellas de cinco">★★★★★</span><span>Difícil</span></span></div>
+            <div class="ctf-challenge-category">ESCALADA DE PRIVILEGIOS · SUID</div>
+            <h3>Escalada de privilegios</h3>
+            <p class="ctf-challenge-context">Hemos interceptado credenciales de bajo nivel de un empleado descuidado. Debes entrar al servidor, pero no tendrás permisos de administrador (root). Encuentra una vulnerabilidad en los binarios del sistema para escalar privilegios.</p>
+            <details class="ctf-hints">
+              <summary><span>Ver pistas técnicas</span><span class="ctf-details-plus" aria-hidden="true">+</span></summary>
+              <div class="ctf-hint-content">
+                <p><b>Pista 1.</b> Conéctate por SSH desde tu terminal:</p><code>ssh sysadmin@centinet-ctf-target</code>
+                <div class="ctf-credentials"><span>Contraseña <b>sysadmin</b></span></div>
+                <p><b>Pista 2.</b> Busca binarios que tengan activado el bit SUID. Revisa:</p><code>/usr/local/bin/</code>
+                <p>Si encuentras una versión modificada de <code>find</code>, consulta GTFOBins para conocer cómo puede utilizarse para obtener una shell con permisos de root.</p>
+                <p><b>Pista 3.</b> Cuando tengas permisos de root, busca la bandera en la carpeta personal del usuario.</p>
+              </div>
+            </details>
+            <div class="ctf-flag-format"><span>FORMATO DE RESPUESTA</span><code>CTF{...}</code></div>
+            <form class="ctf-flag-form" data-flag-check="4" novalidate>
+              <label for="flag-entry-4">Introduce la flag que encontraste</label>
+              <div class="ctf-flag-entry">
+                <input id="flag-entry-4" name="flag" type="text" inputmode="text" maxlength="100" placeholder="CTF{...}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="flag-feedback-4" required>
+                <button class="button button-primary" type="submit">Comprobar <span aria-hidden="true">→</span></button>
+              </div>
+              <p class="ctf-flag-feedback" id="flag-feedback-4" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+        </div>
+
+        <div class="ctf-finish-note reveal"><span class="ctf-finish-mark" aria-hidden="true">✦</span><p><b>El objetivo va más allá de encontrar las flags.</b> Cada acción forma parte del ejercicio: observa qué ocurre, interpreta las señales y descubre cómo Centinet puede ayudar a detectar actividad sospechosa.</p></div>
+      </div>
+    </section>
+
+    <section class="ctf-final-section">
+      <div class="container ctf-final-panel reveal">
+        <div class="ctf-final-glow" aria-hidden="true"></div>
+        <div class="ctf-final-copy"><div class="eyebrow"></span> LISTO PARA EL DESAFÍO</div><h2>La mejor forma de aprender<br><span class="gradient-text">es ponerlo a prueba.</span></h2><p>Despliega el entorno, sigue las pistas y descubre lo que ocurre detrás de cada alerta.</p></div>
+        <div class="ctf-final-actions"><a class="button button-primary button-large" href="http://ctf.centinet.ctf" target="_blank" rel="noopener noreferrer">Desplegar entorno <span aria-hidden="true">↗</span></a><a class="ctf-back-link" href="index.html">Volver a conocer Centinet</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand-block">
+        <a class="brand footer-brand" href="index.html" aria-label="Centinet, volver al inicio"><img src="assets/centinet-mark.png" alt="" width="44" height="44"><span class="brand-word">CENTINET<span class="brand-period">.</span></span></a>
+        <p>Seguridad más clara, accesible y adaptable para empresas en crecimiento.</p>
+        <span class="footer-tagline">SECURITY FOR ALL.</span>
+      </div>
+      <div class="footer-column"><strong>Explora</strong><a href="index.html#plataforma">Plataforma</a><a href="index.html#como-funciona">Cómo funciona</a><a href="index.html#seguridad">Seguridad</a><a href="ctf.html" aria-current="page">Centinet CTF</a></div>
+      <div class="footer-column"><strong>Descubre</strong><a href="#retos">Los cuatro retos</a><a href="#laboratorio">Entorno de práctica</a><a href="index.html#contacto">Solicitar propuesta</a></div>
+      <a class="back-to-top" href="#inicio" aria-label="Volver al inicio">↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> Centinet. Todos los derechos reservados.</span><span>Aprende haciendo. Practica con propósito.</span></div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
